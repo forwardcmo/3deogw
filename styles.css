@@ -356,6 +356,54 @@ img {
   color: rgba(255, 255, 255, 0.5);
 }
 
+/* ===== Announcement Card ===== */
+.announcement-card {
+  display: block;
+  margin-top: 2rem;
+  margin-bottom: 3.5rem;
+  border-radius: 1rem;
+  border: 1px solid rgba(31, 102, 178, 0.3);
+  background: rgba(31, 102, 178, 0.08);
+  padding: 1.5rem;
+  transition: background 0.15s;
+}
+
+.announcement-card:hover {
+  background: rgba(31, 102, 178, 0.14);
+}
+
+.announcement-inner {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.announcement-text .badge {
+  margin-bottom: 0.75rem;
+}
+
+.announcement-text h3 {
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.announcement-text .open-link {
+  display: inline-block;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  text-decoration-color: rgba(255, 255, 255, 0.2);
+  transition: text-decoration-color 0.15s;
+}
+
+.announcement-card:hover .open-link {
+  text-decoration-color: rgba(255, 255, 255, 0.6);
+}
+
 /* ===== Page Banner ===== */
 .page-banner {
   margin-top: 2rem;
